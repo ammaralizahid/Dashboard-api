@@ -1,0 +1,38 @@
+{
+    "db":{
+        "host": "localhost",
+        "user": "root",
+        "password":"",
+        "database":"gecommerce_gecora",
+        "port":3306
+    },
+
+    "adminSide":{
+
+        "sideBar":{
+           "Dashboard":{
+            "path":"/dashboard",
+            "icon":"dashboard-icon",
+            "roles":["Admin","Super Admin"],
+            "table":["Product","Reports"]
+           },
+           "Settings":{
+            "path":"/dashboard",
+            "icon":"dashboard-icon",
+            "roles":["Admin","Super Admin"],
+            "table":["Product","Reports"]
+           }
+        },
+        
+        "upsertActions":{
+          "addProducts":{
+            "table":"products",
+            "userMessage":"Product added successfully"
+          }
+        },
+        "read":{
+
+        }
+    }
+
+}
